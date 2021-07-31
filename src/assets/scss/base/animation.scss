@@ -5,55 +5,55 @@ $animation-timing-function-enter: ease-out;
 $animation-timing-function-leave: ease-in;
 
 
-@keyframes daq-slide-up-enter {
+@keyframes lm-slide-up-enter {
   from {
     transform: translate3d(0, 100%, 0);
   }
 }
 
-@keyframes daq-slide-up-leave {
+@keyframes lm-slide-up-leave {
   to {
     transform: translate3d(0, 100%, 0);
   }
 }
 
-@keyframes daq-slide-down-enter {
+@keyframes lm-slide-down-enter {
   from {
     transform: translate3d(0, -100%, 0);
   }
 }
 
-@keyframes daq-slide-down-leave {
+@keyframes lm-slide-down-leave {
   to {
     transform: translate3d(0, -100%, 0);
   }
 }
 
-@keyframes daq-slide-left-enter {
+@keyframes lm-slide-left-enter {
   from {
     transform: translate3d(-100%, 0, 0);
   }
 }
 
-@keyframes daq-slide-left-leave {
+@keyframes lm-slide-left-leave {
   to {
     transform: translate3d(-100%, 0, 0);
   }
 }
 
-@keyframes daq-slide-right-enter {
+@keyframes lm-slide-right-enter {
   from {
     transform: translate3d(100%, 0, 0);
   }
 }
 
-@keyframes daq-slide-right-leave {
+@keyframes lm-slide-right-leave {
   to {
     transform: translate3d(100%, 0, 0);
   }
 }
 
-@keyframes daq-fade-in {
+@keyframes lm-fade-in {
   from {
     opacity: 0;
   }
@@ -63,7 +63,7 @@ $animation-timing-function-leave: ease-in;
   }
 }
 
-@keyframes daq-fade-out {
+@keyframes lm-fade-out {
   from {
     opacity: 1;
   }
@@ -73,7 +73,7 @@ $animation-timing-function-leave: ease-in;
   }
 }
 
-@keyframes daq-rotate {
+@keyframes lm-rotate {
   from {
     transform: rotate(0deg);
   }
@@ -85,60 +85,64 @@ $animation-timing-function-leave: ease-in;
 
 .lm-fade {
   &-enter-active {
-    animation: $animation-duration-base daq-fade-in both
+    animation: $animation-duration-base lm-fade-in both
       $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: $animation-duration-base daq-fade-out both
+    animation: $animation-duration-base lm-fade-out both
       $animation-timing-function-leave;
   }
 }
 
 .lm-slide-up {
   &-enter-active {
-    animation: daq-slide-up-enter $animation-duration-base both
+    animation: lm-slide-up-enter $animation-duration-base both
       $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: daq-slide-up-leave $animation-duration-base both
+    animation: lm-slide-up-leave $animation-duration-base both
       $animation-timing-function-leave;
   }
 }
 
 .lm-slide-down {
   &-enter-active {
-    animation: daq-slide-down-enter $animation-duration-base both
+    animation: lm-slide-down-enter $animation-duration-base both
       $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: daq-slide-down-leave $animation-duration-base both
+    animation: lm-slide-down-leave $animation-duration-base both
       $animation-timing-function-leave;
   }
 }
 
 .lm-slide-left {
   &-enter-active {
-    animation: daq-slide-left-enter $animation-duration-base both
+    animation: lm-slide-left-enter $animation-duration-base both
+      $animation-timing-function-enter;
+      -webkit-animation: lm-slide-left-enter $animation-duration-base both
       $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: daq-slide-left-leave $animation-duration-base both
+    animation: lm-slide-left-leave $animation-duration-base both
       $animation-timing-function-leave;
   }
 }
 
 .lm-slide-right {
   &-enter-active {
-    animation: daq-slide-right-enter $animation-duration-base both
+    animation: lm-slide-right-enter $animation-duration-base both
+      $animation-timing-function-enter;
+      -webkit-animation: lm-slide-right-enter $animation-duration-base both
       $animation-timing-function-enter;
   }
 
   &-leave-active {
-    animation: daq-slide-right-leave $animation-duration-base both
+    animation: lm-slide-right-leave $animation-duration-base both
       $animation-timing-function-leave;
   }
 }
@@ -170,10 +174,10 @@ $animation-timing-function-leave: ease-in;
   }
 }
 
-.animation-translate-top-in {
+.lm-translate-top-in {
   animation: topIn ease .4s forwards
 }
-.animation-translate-top-out {
+.lm-translate-top-out {
   animation: topOut ease .4s forwards
 }
 
@@ -196,10 +200,10 @@ $animation-timing-function-leave: ease-in;
   }
 }
 
-.animation-translate-bottom-in {
+.lm-translate-bottom-in {
   animation: bottomIn ease .4s forwards
 }
-.animation-translate-bottom-out {
+.lm-translate-bottom-out {
   animation: bottomOut ease .4s forwards
 }
 
@@ -222,10 +226,10 @@ $animation-timing-function-leave: ease-in;
   }
 }
 
-.animation-translate-right-in {
+.lm-translate-right-in {
   animation: rightIn ease .4s forwards
 }
-.animation-translate-right-out {
+.lm-translate-right-out {
   animation: rightOut ease .4s forwards
 }
 
@@ -248,10 +252,10 @@ $animation-timing-function-leave: ease-in;
   }
 }
 
-.animation-translate-left-in {
+.lm-translate-left-in {
   animation: leftIn ease .4s forwards
 }
-.animation-translate-left-out {
+.lm-translate-left-out {
   animation: leftOut ease .5s forwards
 }
 

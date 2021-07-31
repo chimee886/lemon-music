@@ -1,15 +1,12 @@
 /* 系统所用字体库样式[统一使用system-icon] */
 @font-face {
-  font-family: 'sys-icon';  /* project id 345656 */
-  src: url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.eot');
-  src: url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.eot?#iefix') format('embedded-opentype'),
-  url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.woff2') format('woff2'),
-  url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.woff') format('woff'),
-  url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.ttf') format('truetype'),
-  url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.svg#dvicon') format('svg');
+  font-family: 'lm-icon';  /* Project id 2052473 */
+  src: url('//at.alicdn.com/t/font_2052473_qh8ugfc68ro.woff2?t=1627752682326') format('woff2'),
+       url('//at.alicdn.com/t/font_2052473_qh8ugfc68ro.woff?t=1627752682326') format('woff'),
+       url('//at.alicdn.com/t/font_2052473_qh8ugfc68ro.ttf?t=1627752682326') format('truetype');
 }
 .lm-icon {
-  font-family: "sys-icon" !important;
+  font-family: "lm-icon" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
