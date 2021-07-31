@@ -1,0 +1,17 @@
+/* 系统所用字体库样式[统一使用system-icon] */
+@font-face {
+  font-family: 'sys-icon';  /* project id 345656 */
+  src: url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.eot');
+  src: url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.woff2') format('woff2'),
+  url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.woff') format('woff'),
+  url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.ttf') format('truetype'),
+  url('http://file.geeker.com.cn/ued/geek-icon/geekUI-system/iconfont.svg#dvicon') format('svg');
+}
+.lm-icon {
+  font-family: "sys-icon" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

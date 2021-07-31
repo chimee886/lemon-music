@@ -1,0 +1,12 @@
+@import "./base/var";
+// 引入重置样式文件
+@import "./base/reset";
+// 全局变量
+@import "./base/var";
+// 动画
+@import "./base/animation";
+// 字体样式
+@import "./base/font";
+@import "./mixin/utils";
+@import "./mixin/mixins";
+@import "./common";

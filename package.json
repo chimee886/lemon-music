@@ -5,10 +5,18 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "new:comp": "node ./build/new-component.js",
+    "new:page": "node ./build/new-page.js",
+    "update:api": "node ./build/update-api-index-file.js",
+    "update:router": "node ./build/update-router-index-file.js",
+    "update:comp": "node ./build/update-component-index-file.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "file-save": "^0.2.0",
+    "json-templater": "^1.2.0",
+    "uppercamelcase": "^3.0.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"

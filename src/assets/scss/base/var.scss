@@ -1,0 +1,59 @@
+// 系统主题等样式库[与elementui主题保持一致]
+
+// 背景
+$bgBase : #F5F7FA;
+$bgBlack: #000000;
+$bgWhite: #ffffff;
+$bgTrans: transparent;
+// 主题色
+$primary: #526ecc;
+/// color|1|Background Color|4
+$--color-white: #FFFFFF !default;
+/// color|1|Background Color|4
+$--color-black: #000000 !default;
+$--color-primary-light-1: mix($--color-white, $primary, 10%) !default; /* 53a8ff */
+$--color-primary-light-2: mix($--color-white, $primary, 20%) !default; /* 66b1ff */
+$--color-primary-light-3: mix($--color-white, $primary, 30%) !default; /* 79bbff */
+$--color-primary-light-4: mix($--color-white, $primary, 40%) !default; /* 8cc5ff */
+$--color-primary-light-5: mix($--color-white, $primary, 50%) !default; /* a0cfff */
+$--color-primary-light-6: mix($--color-white, $primary, 60%) !default; /* b3d8ff */
+$--color-primary-light-7: mix($--color-white, $primary, 70%) !default; /* c6e2ff */
+$--color-primary-light-8: mix($--color-white, $primary, 80%) !default; /* d9ecff */
+$--color-primary-light-9: mix($--color-white, $primary, 90%) !default; /* ecf5ff */
+// 辅色
+$success: #67C23A;
+// 警告色
+$warning: #E6A23C;
+// 危险色
+$danger: #F56C6C;
+// 信息色
+$info: #909399;
+// 字体色[主要文字、常规文字、次要文字、占位文字]
+$fPrimary: #303133;
+$fRegular: #606266;
+$fSecondary: #909399;
+$fPlaceholder: #C0C4CC;
+$fc3: #333333;
+$fc6: #666666;
+$fc9: #999999;
+// 边框色
+$borderBase: #DCDFE6;
+$borderLight: #E4E7ED;
+$borderLighter: #EBEEF5;
+$borderExtralight: #F2F6FC;
+// 字体大小
+$f12: 12px;
+$f14: 14px;
+$f16: 16px;
+$f18: 18px;
+$f20: 20px;
+$f22: 22px;
+$f24: 24px;
+$f26: 26px;
+$f28: 28px;
+$f30: 30px;
+$f32: 32px;
+$f34: 34px;
+$f36: 36px;
+$f38: 38px;
+$f40: 40px;

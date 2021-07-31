@@ -1,0 +1,163 @@
+/* 公共样式文件 */
+* {
+  margin:0;
+  padding:0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Microsoft YaHei", "Arial", "SimSun";
+  font-size: 14px;
+  background: #fff;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.25s ease 0s;
+  &:active {
+    outline: 0;
+  }
+}
+
+b,strong {
+  font-weight: bold;
+}
+
+i {
+  font-style: normal;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+button {
+  overflow: visible;
+}
+
+button,select {
+  text-transform: none;
+}
+
+button, html input {
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: normal;
+  box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button {
+  height: auto;
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul, li, ol {
+  list-style: none outside none;
+}
+
+input::-moz-placeholder,textarea::-moz-placeholder {
+  color: #cccccc;
+}
+
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+  color: #cccccc;
+}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+  color: #cccccc;
+}
+
+input[type="button"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+ul, li, ol{
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ebeef5;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.5);
+}

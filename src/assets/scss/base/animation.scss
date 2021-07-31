@@ -1,0 +1,275 @@
+// Animation
+$animation-duration-base: 0.3s;
+$animation-duration-fast: 0.2s;
+$animation-timing-function-enter: ease-out;
+$animation-timing-function-leave: ease-in;
+
+
+@keyframes daq-slide-up-enter {
+  from {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes daq-slide-up-leave {
+  to {
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes daq-slide-down-enter {
+  from {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes daq-slide-down-leave {
+  to {
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+@keyframes daq-slide-left-enter {
+  from {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes daq-slide-left-leave {
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes daq-slide-right-enter {
+  from {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes daq-slide-right-leave {
+  to {
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes daq-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes daq-fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes daq-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.lm-fade {
+  &-enter-active {
+    animation: $animation-duration-base daq-fade-in both
+      $animation-timing-function-enter;
+  }
+
+  &-leave-active {
+    animation: $animation-duration-base daq-fade-out both
+      $animation-timing-function-leave;
+  }
+}
+
+.lm-slide-up {
+  &-enter-active {
+    animation: daq-slide-up-enter $animation-duration-base both
+      $animation-timing-function-enter;
+  }
+
+  &-leave-active {
+    animation: daq-slide-up-leave $animation-duration-base both
+      $animation-timing-function-leave;
+  }
+}
+
+.lm-slide-down {
+  &-enter-active {
+    animation: daq-slide-down-enter $animation-duration-base both
+      $animation-timing-function-enter;
+  }
+
+  &-leave-active {
+    animation: daq-slide-down-leave $animation-duration-base both
+      $animation-timing-function-leave;
+  }
+}
+
+.lm-slide-left {
+  &-enter-active {
+    animation: daq-slide-left-enter $animation-duration-base both
+      $animation-timing-function-enter;
+  }
+
+  &-leave-active {
+    animation: daq-slide-left-leave $animation-duration-base both
+      $animation-timing-function-leave;
+  }
+}
+
+.lm-slide-right {
+  &-enter-active {
+    animation: daq-slide-right-enter $animation-duration-base both
+      $animation-timing-function-enter;
+  }
+
+  &-leave-active {
+    animation: daq-slide-right-leave $animation-duration-base both
+      $animation-timing-function-leave;
+  }
+}
+
+
+.animation-fade-in {
+  animation: fadeIn ease .3s forwards
+}
+.animation-fade-out {
+  animation: fadeOut ease .3s forwards;
+  animation-delay: .3s
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+
+  to {
+    opacity: 1
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1
+  }
+
+  to {
+    opacity: 0
+  }
+}
+
+.animation-translate-top-in {
+  animation: topIn ease .4s forwards
+}
+.animation-translate-top-out {
+  animation: topOut ease .4s forwards
+}
+
+@keyframes topIn {
+  0% {
+    transform: translateY(-100%)
+  }
+
+  to {
+    transform: translateY(0)
+  }
+}
+@keyframes topOut {
+  0% {
+    transform: translateY(0)
+  }
+
+  to {
+    transform: translateY(-100%)
+  }
+}
+
+.animation-translate-bottom-in {
+  animation: bottomIn ease .4s forwards
+}
+.animation-translate-bottom-out {
+  animation: bottomOut ease .4s forwards
+}
+
+@keyframes bottomIn {
+  0% {
+    transform: translateY(100%)
+  }
+
+  to {
+    transform: translateY(0)
+  }
+}
+@keyframes bottomOut {
+  0% {
+    transform: translateY(0)
+  }
+
+  to {
+    transform: translateY(100%)
+  }
+}
+
+.animation-translate-right-in {
+  animation: rightIn ease .4s forwards
+}
+.animation-translate-right-out {
+  animation: rightOut ease .4s forwards
+}
+
+@keyframes rightIn {
+  0% {
+    transform: translateX(100%)
+  }
+
+  to {
+    transform: translateX(0)
+  }
+}
+@keyframes rightOut {
+  0% {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(100%)
+  }
+}
+
+.animation-translate-left-in {
+  animation: leftIn ease .4s forwards
+}
+.animation-translate-left-out {
+  animation: leftOut ease .5s forwards
+}
+
+@keyframes leftIn {
+  0% {
+    transform: translateX(-100%)
+  }
+
+  to {
+    transform: translateX(0)
+  }
+}
+@keyframes leftOut {
+  0% {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(-100%)
+  }
+}
