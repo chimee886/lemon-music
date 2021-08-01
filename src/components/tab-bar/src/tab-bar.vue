@@ -2,29 +2,13 @@
   <div class="lm-tab-bar">
     <van-tabbar v-model="active"
                 safe-area-inset-bottom>
-      <van-tabbar-item name="home"
-                       icon="music-o"
+      <van-tabbar-item v-for="(tab, index) in tabs"
+                       :key="index"
+                       :name="tab.name"
+                       :icon="tab.icon"
                        replace
-                       to="/">
-        首页
-      </van-tabbar-item>
-      <van-tabbar-item name="discovery"
-                       icon="search"
-                       replace
-                       to="/discovery">
-        发现
-      </van-tabbar-item>
-      <van-tabbar-item name="lemon"
-                       icon="friends-o"
-                       replace
-                       to="/lemon">
-        乐萌
-      </van-tabbar-item>
-      <van-tabbar-item name="me"
-                       icon="contact"
-                       replace
-                       to="/me">
-        我的
+                       :to="tab.route">
+        {{ tab.tabText }}
       </van-tabbar-item>
     </van-tabbar>
   </div>
@@ -46,7 +30,29 @@ export default {
     return { active };
   },
   data() {
-    return {};
+    return {
+      tabs: [{
+        name: 'home',
+        tabText: '首页',
+        icon: 'music-o',
+        route: '/'
+      }, {
+        name: 'discovery',
+        tabText: '发现',
+        icon: 'search',
+        route: '/discovery'
+      }, {
+        name: 'lemon',
+        tabText: '乐萌',
+        icon: 'friends-o',
+        route: '/lemon'
+      }, {
+        name: 'me',
+        tabText: '我的',
+        icon: 'contact',
+        route: '/me'
+      }]
+    };
   },
   watch: {
     activeTab(tab) {

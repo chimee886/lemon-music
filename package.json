@@ -13,6 +13,7 @@
     "update:comp": "node ./build/update-component-index-file.js"
   },
   "dependencies": {
+    "@better-scroll/core": "^2.4.1",
     "core-js": "^3.6.5",
     "file-save": "^0.2.0",
     "json-templater": "^1.2.0",
@@ -38,6 +39,7 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^7.0.0",
     "node-sass": "^4.12.0",
+    "postcss-px-to-viewport": "^1.1.1",
     "sass-loader": "^8.0.2"
   }
 }

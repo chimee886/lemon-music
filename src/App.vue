@@ -1,11 +1,13 @@
 <template>
   <div id="app">
     <div id="nav">
-      <lm-tab-bar :active-tab="activeTab"></lm-tab-bar>
+      <lm-tab-bar :active-tab="activeTab" />
     </div>
     <router-view v-slot="{Component}">
       <transition :name="transitionName">
-        <component :is="Component"></component>
+        <keep-alive>
+          <component :is="Component" />
+        </keep-alive>
       </transition>
     </router-view>
   </div>
