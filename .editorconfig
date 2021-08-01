@@ -1,5 +1,17 @@
-[*.{js,jsx,ts,tsx,vue}]
-indent_style = space
-indent_size = 2
-trim_trailing_whitespace = true
+root = true
+
+[*]
+# 换行符 [lf | cr | crlf]
+end_of_line = crlf
+
+# 文件末尾空行
 insert_final_newline = true
+
+# 所有文件缩进使用空格
+indent_style = space
+
+# 缩进的空格数
+indent_size = 2
+
+# 编码格式
+charset = utf-8
